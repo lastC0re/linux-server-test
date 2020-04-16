@@ -3,6 +3,9 @@ package com.ginogeng.LinuxTest.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @ClassName controller
  * @Description: TODO
@@ -13,8 +16,37 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
+    static int i = 100;
+
+    static AtomicInteger ai = new AtomicInteger(100);
+
+    ReentrantLock lock = new ReentrantLock();
+
     @RequestMapping("/")
-    public String home() {
-        return "chinese get out!";
+    public Integer home() {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    Thread.sleep(5000);
+//                    i--;
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
+        ai.decrementAndGet();
+        return ai.get();
+    }
+
+    @RequestMapping("/reset")
+    public Integer reset() {
+        i = 100;
+        return i;
+    }
+
+    @RequestMapping("/getNumber")
+    public Integer getNumber() {
+        return ai.get();
     }
 }
