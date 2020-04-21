@@ -1,4 +1,4 @@
-package com.ginogeng.LinuxTest.aop;
+package top.ginogeng.practice.aop;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;

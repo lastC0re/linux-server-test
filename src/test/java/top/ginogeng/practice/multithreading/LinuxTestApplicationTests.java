@@ -1,4 +1,4 @@
-package com.ginogeng.LinuxTest;
+package top.ginogeng.practice.multithreading;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

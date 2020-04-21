@@ -1,4 +1,4 @@
-package com.ginogeng.LinuxTest;
+package top.ginogeng.practice.multithreading;
 
 /**
  * @ClassName JedisTest

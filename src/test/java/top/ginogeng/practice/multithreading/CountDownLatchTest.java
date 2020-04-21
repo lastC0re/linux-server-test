@@ -1,4 +1,4 @@
-package com.ginogeng.LinuxTest;
+package top.ginogeng.practice.multithreading;
 
 import java.util.concurrent.CountDownLatch;
 

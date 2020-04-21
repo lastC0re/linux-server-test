@@ -1,8 +1,10 @@
-package com.ginogeng.LinuxTest.controller;
+package top.ginogeng.practice.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -48,5 +50,10 @@ public class HomeController {
     @RequestMapping("/getNumber")
     public Integer getNumber() {
         return ai.get();
+    }
+
+    public static void main(String[] args) {
+        Date date = new Date(1586770086000L);
+        System.out.println(date);
     }
 }
