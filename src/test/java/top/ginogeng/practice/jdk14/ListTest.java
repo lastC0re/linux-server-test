@@ -16,8 +16,8 @@ import java.util.stream.Stream;
 public class ListTest {
 
     public static void main(String[] args) {
-        List<String> of = List.of("java", "python");
-        Consumer<Object> consumer = x -> System.out.println(x);
-        of.forEach(consumer);
+//        List<String> of = List.of("java", "python");
+//        Consumer<Object> consumer = x -> System.out.println(x);
+//        of.forEach(consumer);
     }
 }
