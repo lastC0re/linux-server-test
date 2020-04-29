@@ -14,14 +14,14 @@ public class VarTest {
     public String va;
 
     public static void main(String[] args) {
-        var list = new ArrayList<VarTest>();
-        list.add(new VarTest());
-        for (var a : list) {
-            System.out.println(a.va);
-        }
-        for (var i = 1.00; ; ) {
-            System.out.println(i);
-        }
+//        var list = new ArrayList<VarTest>();
+//        list.add(new VarTest());
+//        for (var a : list) {
+//            System.out.println(a.va);
+//        }
+//        for (var i = 1.00; ; ) {
+//            System.out.println(i);
+//        }
     }
 
 }
